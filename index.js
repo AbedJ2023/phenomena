@@ -22,7 +22,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.use("./dist", express.static(path.join(__dirname, "dist")));
+app.use("/dist", express.static(path.join(__dirname, "dist")));
 
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
 
