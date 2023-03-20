@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "db:build": "node ./db/init_db",
-    "server:dev": "nodemon index.js",
     "start": "node index.js",
     "build": "webpack",
     "build:dev": "webpack -w --mode=development",
+    "db:build": "node ./db/init_db",
+    "server:dev": "nodemon index.js",
     "test": "jest  --runInBand --verbose",
     "test:watch": "jest --watchAll --runInBand --verbose",
     "test:watch:db": "jest --watchAll db",
